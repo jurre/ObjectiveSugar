@@ -155,6 +155,10 @@
     return self.reverseObjectEnumerator.allObjects;
 }
 
+- (NSArray *)uniq {
+    return [[NSOrderedSet orderedSetWithArray:self] array];
+}
+
 #pragma mark - Set operations
 
 - (NSArray *)intersectionWithArray:(NSArray *)array {

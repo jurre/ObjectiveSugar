@@ -151,9 +151,16 @@
 /**
  Alias for reverseObjectEnumerator.allObjects
  
- Returns a reversed array
+ @return a reversed array
  */
 - (NSArray *)reverse;
+
+/**
+ Filter out all non-unique values while maintaining order
+ 
+ @return An with the unique objects
+ */
+- (NSArray *)uniq;
 
 /**
  Return all the objects that are in both self and `array`.

@@ -160,6 +160,13 @@ describe(@"NSArray categories", ^{
         });
     });
     
+    context(@"unique elements", ^{
+        it(@"filters the unique elements in the array", ^{
+            NSArray *arrayWithDuplicates = @[@1, @1, @2, @3, @3, @4, @5];
+            [[[arrayWithDuplicates uniq] should] equal:@[@1, @2, @3, @4, @5]];
+        });
+    });
+    
     context(@"sorting", ^{
        
         it(@"-sort aliases -sortUsingComparator:", ^{
