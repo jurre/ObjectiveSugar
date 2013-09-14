@@ -177,6 +177,10 @@ NSArray *mixedData = @[ @1, @"Objective Sugar!", @"Github", @4, @"5"];
 }];
 // Objective Sugar
 
+NSArray *arrayWithDuplicates = @[@1, @1, @2, @3, @3, @4, @5];
+[arrayWithDuplicates uniq];
+// [@1, @2, @3, @4, @5];
+
 ```
 
 #### NSMutableArray additions
